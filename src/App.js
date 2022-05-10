@@ -1,6 +1,9 @@
 import twitterLogo from "./assets/twitter-logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
+import idl from './idl.json'
+import { Connection, PublicKey, clusterApiUrl } from '@solana/web3.js';
+import { Program, Provider, web3 } from '@project-serum/anchor';
 
 // Constants
 const TWITTER_HANDLE = "_buildspace";
